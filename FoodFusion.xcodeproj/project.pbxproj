@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		FEE23E582AF3BDFD00C1F742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E572AF3BDFD00C1F742 /* AppDelegate.swift */; };
 		FEE23E5A2AF3BDFD00C1F742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E592AF3BDFD00C1F742 /* SceneDelegate.swift */; };
-		FEE23E5C2AF3BDFD00C1F742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E5B2AF3BDFD00C1F742 /* ViewController.swift */; };
 		FEE23E5F2AF3BDFD00C1F742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E5D2AF3BDFD00C1F742 /* Main.storyboard */; };
 		FEE23E612AF3BDFE00C1F742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E602AF3BDFE00C1F742 /* Assets.xcassets */; };
 		FEE23E642AF3BDFE00C1F742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E622AF3BDFE00C1F742 /* LaunchScreen.storyboard */; };
+		FEE23E732AF3CE2F00C1F742 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E722AF3CE2F00C1F742 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEE23E542AF3BDFD00C1F742 /* FoodFusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE23E572AF3BDFD00C1F742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE23E592AF3BDFD00C1F742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEE23E5B2AF3BDFD00C1F742 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEE23E5E2AF3BDFD00C1F742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEE23E602AF3BDFE00C1F742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEE23E632AF3BDFE00C1F742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEE23E652AF3BDFE00C1F742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE23E722AF3CE2F00C1F742 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		FEE23E562AF3BDFD00C1F742 /* FoodFusion */ = {
 			isa = PBXGroup;
 			children = (
+				FEE23E6F2AF3CE0200C1F742 /* CustomViews */,
+				FEE23E6C2AF3CDE300C1F742 /* Views */,
+				FEE23E6B2AF3CDDD00C1F742 /* Models */,
 				FEE23E572AF3BDFD00C1F742 /* AppDelegate.swift */,
 				FEE23E592AF3BDFD00C1F742 /* SceneDelegate.swift */,
-				FEE23E5B2AF3BDFD00C1F742 /* ViewController.swift */,
 				FEE23E5D2AF3BDFD00C1F742 /* Main.storyboard */,
 				FEE23E602AF3BDFE00C1F742 /* Assets.xcassets */,
 				FEE23E622AF3BDFE00C1F742 /* LaunchScreen.storyboard */,
 				FEE23E652AF3BDFE00C1F742 /* Info.plist */,
 			);
 			path = FoodFusion;
+			sourceTree = "<group>";
+		};
+		FEE23E6B2AF3CDDD00C1F742 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEE23E6C2AF3CDE300C1F742 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEE23E712AF3CE1600C1F742 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEE23E6F2AF3CE0200C1F742 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FEE23E712AF3CE1600C1F742 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FEE23E722AF3CE2F00C1F742 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE23E5C2AF3BDFD00C1F742 /* ViewController.swift in Sources */,
 				FEE23E582AF3BDFD00C1F742 /* AppDelegate.swift in Sources */,
 				FEE23E5A2AF3BDFD00C1F742 /* SceneDelegate.swift in Sources */,
+				FEE23E732AF3CE2F00C1F742 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +327,7 @@
 				DEVELOPMENT_TEAM = GFQZS7NGFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodFusion/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Food Fusion";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +356,7 @@
 				DEVELOPMENT_TEAM = GFQZS7NGFJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodFusion/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Food Fusion";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
