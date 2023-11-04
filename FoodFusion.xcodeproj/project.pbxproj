@@ -12,6 +12,11 @@
 		FE858FFB2AF618A80033C00E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE858FF92AF618A80033C00E /* CategoryCollectionViewCell.swift */; };
 		FE858FFC2AF618A80033C00E /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE858FFA2AF618A80033C00E /* CategoryCollectionViewCell.xib */; };
 		FE858FFE2AF620D20033C00E /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE858FFD2AF620D20033C00E /* DishCategory.swift */; };
+		FE8590002AF623470033C00E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE858FFF2AF623470033C00E /* String+Extension.swift */; };
+		FE8590032AF6380C0033C00E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8590022AF6380C0033C00E /* CardView.swift */; };
+		FE8590072AF648520033C00E /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8590052AF648520033C00E /* DishPortraitCollectionViewCell.swift */; };
+		FE8590082AF648520033C00E /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE8590062AF648520033C00E /* DishPortraitCollectionViewCell.xib */; };
+		FE85900A2AF64ADF0033C00E /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8590092AF64ADF0033C00E /* Dish.swift */; };
 		FEE23E582AF3BDFD00C1F742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E572AF3BDFD00C1F742 /* AppDelegate.swift */; };
 		FEE23E5A2AF3BDFD00C1F742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E592AF3BDFD00C1F742 /* SceneDelegate.swift */; };
 		FEE23E5F2AF3BDFD00C1F742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E5D2AF3BDFD00C1F742 /* Main.storyboard */; };
@@ -31,6 +36,11 @@
 		FE858FF92AF618A80033C00E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE858FFA2AF618A80033C00E /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		FE858FFD2AF620D20033C00E /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		FE858FFF2AF623470033C00E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FE8590022AF6380C0033C00E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FE8590052AF648520033C00E /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE8590062AF648520033C00E /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
+		FE8590092AF64ADF0033C00E /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		FEE23E542AF3BDFD00C1F742 /* FoodFusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE23E572AF3BDFD00C1F742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE23E592AF3BDFD00C1F742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +80,6 @@
 				402EDE88AD6480C528B8DB54 /* Pods-FoodFusion.debug.xcconfig */,
 				1426F99EB82066E632719ECE /* Pods-FoodFusion.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +94,7 @@
 		FE858FF62AF6182C0033C00E /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				FE8590042AF648200033C00E /* DishPortraitCollectionViewCell */,
 				FE858FF82AF618640033C00E /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCells;
@@ -107,6 +117,23 @@
 				FE858FFA2AF618A80033C00E /* CategoryCollectionViewCell.xib */,
 			);
 			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FE8590012AF637FD0033C00E /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				FE8590022AF6380C0033C00E /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		FE8590042AF648200033C00E /* DishPortraitCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE8590052AF648520033C00E /* DishPortraitCollectionViewCell.swift */,
+				FE8590062AF648520033C00E /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishPortraitCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		FEE23E4B2AF3BDFD00C1F742 = {
@@ -147,6 +174,7 @@
 			children = (
 				FEE246012AF5576B00C1F742 /* OnboardingSlide.swift */,
 				FE858FFD2AF620D20033C00E /* DishCategory.swift */,
+				FE8590092AF64ADF0033C00E /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +191,7 @@
 		FEE23E6F2AF3CE0200C1F742 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FE8590012AF637FD0033C00E /* CardView */,
 				FE858FF62AF6182C0033C00E /* CollectionViewCells */,
 			);
 			path = CustomViews;
@@ -181,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				FEE245FF2AF555EB00C1F742 /* UIView+Extension.swift */,
+				FE858FFF2AF623470033C00E /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,6 +277,7 @@
 			files = (
 				FE858FFC2AF618A80033C00E /* CategoryCollectionViewCell.xib in Resources */,
 				FEE23E642AF3BDFE00C1F742 /* LaunchScreen.storyboard in Resources */,
+				FE8590082AF648520033C00E /* DishPortraitCollectionViewCell.xib in Resources */,
 				FEE23E612AF3BDFE00C1F742 /* Assets.xcassets in Resources */,
 				FEE23E5F2AF3BDFD00C1F742 /* Main.storyboard in Resources */,
 			);
@@ -309,7 +340,11 @@
 				FEE23E732AF3CE2F00C1F742 /* OnboardingViewController.swift in Sources */,
 				FE858FF52AF613250033C00E /* HomeViewController.swift in Sources */,
 				FE858FFE2AF620D20033C00E /* DishCategory.swift in Sources */,
+				FE8590002AF623470033C00E /* String+Extension.swift in Sources */,
+				FE8590032AF6380C0033C00E /* CardView.swift in Sources */,
 				FEE246042AF55A1700C1F742 /* OnboardingCollectionViewCell.swift in Sources */,
+				FE85900A2AF64ADF0033C00E /* Dish.swift in Sources */,
+				FE8590072AF648520033C00E /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,14 +498,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GFQZS7NGFJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodFusion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Food Fusion";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,14 +531,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GFQZS7NGFJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodFusion/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Food Fusion";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
