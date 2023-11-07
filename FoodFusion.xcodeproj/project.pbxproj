@@ -21,6 +21,16 @@
 		FE85900F2AF6A23F0033C00E /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE85900D2AF6A23F0033C00E /* DishLandscapeCollectionViewCell.xib */; };
 		FE8590122AF6CCB00033C00E /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8590112AF6CCB00033C00E /* DishDetailViewController.swift */; };
 		FE8590142AF6CFC90033C00E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8590132AF6CFC90033C00E /* UIViewController+Extension.swift */; };
+		FEDA1FF92AF7F9EF004249F5 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA1FF72AF7F9EF004249F5 /* DishListTableViewCell.swift */; };
+		FEDA1FFA2AF7F9EF004249F5 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDA1FF82AF7F9EF004249F5 /* DishListTableViewCell.xib */; };
+		FEDA1FFD2AF7FCB1004249F5 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA1FFC2AF7FCB1004249F5 /* ListDishesViewController.swift */; };
+		FEDA20002AF800A3004249F5 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA1FFF2AF800A3004249F5 /* ListOrdersViewController.swift */; };
+		FEDA20022AF80226004249F5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA20012AF80226004249F5 /* Order.swift */; };
+		FEDA20052AF947E0004249F5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA20042AF947E0004249F5 /* NetworkService.swift */; };
+		FEDA20072AF948C8004249F5 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA20062AF948C8004249F5 /* Route.swift */; };
+		FEDA20092AF94948004249F5 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA20082AF94948004249F5 /* Method.swift */; };
+		FEDA27982AFA4261004249F5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA27972AFA4261004249F5 /* AppError.swift */; };
+		FEDA279A2AFA4939004249F5 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA27992AFA4939004249F5 /* ApiResponse.swift */; };
 		FEE23E582AF3BDFD00C1F742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E572AF3BDFD00C1F742 /* AppDelegate.swift */; };
 		FEE23E5A2AF3BDFD00C1F742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE23E592AF3BDFD00C1F742 /* SceneDelegate.swift */; };
 		FEE23E5F2AF3BDFD00C1F742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE23E5D2AF3BDFD00C1F742 /* Main.storyboard */; };
@@ -49,6 +59,16 @@
 		FE85900D2AF6A23F0033C00E /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		FE8590112AF6CCB00033C00E /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		FE8590132AF6CFC90033C00E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FEDA1FF72AF7F9EF004249F5 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		FEDA1FF82AF7F9EF004249F5 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		FEDA1FFC2AF7FCB1004249F5 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		FEDA1FFF2AF800A3004249F5 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
+		FEDA20012AF80226004249F5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FEDA20042AF947E0004249F5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FEDA20062AF948C8004249F5 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		FEDA20082AF94948004249F5 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		FEDA27972AFA4261004249F5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		FEDA27992AFA4939004249F5 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		FEE23E542AF3BDFD00C1F742 /* FoodFusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE23E572AF3BDFD00C1F742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE23E592AF3BDFD00C1F742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +182,51 @@
 			path = DishDetail;
 			sourceTree = "<group>";
 		};
+		FEDA1FF02AF7F439004249F5 /* TableVIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA1FF62AF7F9D2004249F5 /* DishListTableViewCell */,
+			);
+			path = TableVIewCell;
+			sourceTree = "<group>";
+		};
+		FEDA1FF62AF7F9D2004249F5 /* DishListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA1FF72AF7F9EF004249F5 /* DishListTableViewCell.swift */,
+				FEDA1FF82AF7F9EF004249F5 /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCell;
+			sourceTree = "<group>";
+		};
+		FEDA1FFB2AF7FC8D004249F5 /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA1FFC2AF7FCB1004249F5 /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
+			sourceTree = "<group>";
+		};
+		FEDA1FFE2AF80092004249F5 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA1FFF2AF800A3004249F5 /* ListOrdersViewController.swift */,
+			);
+			path = ListOrders;
+			sourceTree = "<group>";
+		};
+		FEDA20032AF947D1004249F5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA20042AF947E0004249F5 /* NetworkService.swift */,
+				FEDA20062AF948C8004249F5 /* Route.swift */,
+				FEDA20082AF94948004249F5 /* Method.swift */,
+				FEDA27972AFA4261004249F5 /* AppError.swift */,
+				FEDA27992AFA4939004249F5 /* ApiResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		FEE23E4B2AF3BDFD00C1F742 = {
 			isa = PBXGroup;
 			children = (
@@ -183,13 +248,14 @@
 		FEE23E562AF3BDFD00C1F742 /* FoodFusion */ = {
 			isa = PBXGroup;
 			children = (
+				FEDA20032AF947D1004249F5 /* Networking */,
 				FEE245FE2AF555CE00C1F742 /* Extensions */,
 				FEE23E6F2AF3CE0200C1F742 /* CustomViews */,
 				FEE23E6C2AF3CDE300C1F742 /* Views */,
-				FEE23E6B2AF3CDDD00C1F742 /* Models */,
-				FE858FF72AF618450033C00E /* Resources */,
 				FEE23E5D2AF3BDFD00C1F742 /* Main.storyboard */,
 				FEE23E622AF3BDFE00C1F742 /* LaunchScreen.storyboard */,
+				FEE23E6B2AF3CDDD00C1F742 /* Models */,
+				FE858FF72AF618450033C00E /* Resources */,
 				FEE23E652AF3BDFE00C1F742 /* Info.plist */,
 			);
 			path = FoodFusion;
@@ -201,6 +267,7 @@
 				FEE246012AF5576B00C1F742 /* OnboardingSlide.swift */,
 				FE858FFD2AF620D20033C00E /* DishCategory.swift */,
 				FE8590092AF64ADF0033C00E /* Dish.swift */,
+				FEDA20012AF80226004249F5 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +275,8 @@
 		FEE23E6C2AF3CDE300C1F742 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FEDA1FFE2AF80092004249F5 /* ListOrders */,
+				FEDA1FFB2AF7FC8D004249F5 /* ListDishes */,
 				FE8590102AF6CC980033C00E /* DishDetail */,
 				FE858FF32AF613120033C00E /* Home */,
 				FEE23E712AF3CE1600C1F742 /* Onboarding */,
@@ -218,6 +287,7 @@
 		FEE23E6F2AF3CE0200C1F742 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FEDA1FF02AF7F439004249F5 /* TableVIewCell */,
 				FE8590012AF637FD0033C00E /* CardView */,
 				FE858FF62AF6182C0033C00E /* CollectionViewCells */,
 			);
@@ -304,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE858FFC2AF618A80033C00E /* CategoryCollectionViewCell.xib in Resources */,
+				FEDA1FFA2AF7F9EF004249F5 /* DishListTableViewCell.xib in Resources */,
 				FEE23E642AF3BDFE00C1F742 /* LaunchScreen.storyboard in Resources */,
 				FE8590082AF648520033C00E /* DishPortraitCollectionViewCell.xib in Resources */,
 				FEE23E612AF3BDFE00C1F742 /* Assets.xcassets in Resources */,
@@ -361,19 +432,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDA1FF92AF7F9EF004249F5 /* DishListTableViewCell.swift in Sources */,
+				FEDA20002AF800A3004249F5 /* ListOrdersViewController.swift in Sources */,
+				FEDA20022AF80226004249F5 /* Order.swift in Sources */,
 				FE8590142AF6CFC90033C00E /* UIViewController+Extension.swift in Sources */,
 				FE858FFB2AF618A80033C00E /* CategoryCollectionViewCell.swift in Sources */,
 				FEE246022AF5576B00C1F742 /* OnboardingSlide.swift in Sources */,
 				FEE23E582AF3BDFD00C1F742 /* AppDelegate.swift in Sources */,
 				FEE23E5A2AF3BDFD00C1F742 /* SceneDelegate.swift in Sources */,
+				FEDA20092AF94948004249F5 /* Method.swift in Sources */,
 				FEE246002AF555EB00C1F742 /* UIView+Extension.swift in Sources */,
 				FEE23E732AF3CE2F00C1F742 /* OnboardingViewController.swift in Sources */,
 				FE8590122AF6CCB00033C00E /* DishDetailViewController.swift in Sources */,
 				FE858FF52AF613250033C00E /* HomeViewController.swift in Sources */,
+				FEDA279A2AFA4939004249F5 /* ApiResponse.swift in Sources */,
 				FE858FFE2AF620D20033C00E /* DishCategory.swift in Sources */,
+				FEDA20072AF948C8004249F5 /* Route.swift in Sources */,
+				FEDA20052AF947E0004249F5 /* NetworkService.swift in Sources */,
 				FE85900E2AF6A23F0033C00E /* DishLandscapeCollectionViewCell.swift in Sources */,
 				FE8590002AF623470033C00E /* String+Extension.swift in Sources */,
 				FE8590032AF6380C0033C00E /* CardView.swift in Sources */,
+				FEDA1FFD2AF7FCB1004249F5 /* ListDishesViewController.swift in Sources */,
+				FEDA27982AFA4261004249F5 /* AppError.swift in Sources */,
 				FEE246042AF55A1700C1F742 /* OnboardingCollectionViewCell.swift in Sources */,
 				FE85900A2AF64ADF0033C00E /* Dish.swift in Sources */,
 				FE8590072AF648520033C00E /* DishPortraitCollectionViewCell.swift in Sources */,
