@@ -31,6 +31,15 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
+        NetworkService.shared.fetchAllCategories { [weak self] (result) in
+            switch result {
+                
+            case .success(let allDishes):
+                print("It was successful.")
+            case .failure(let error):
+                print("The error is: \(error.localizedDescription)")
+            }
+        }
     }
     private func registerCells() {
         categoryCollectionView.register(UINib(nibName:  CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier )

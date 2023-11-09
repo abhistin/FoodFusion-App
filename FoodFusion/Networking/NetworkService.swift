@@ -12,8 +12,9 @@ struct NetworkService {
     static let shared = NetworkService()
     private init() {}
     
-    func myFirstRequest() {
-        request(route: .temp, method: .get, type: String.self, completion: {_  in })
+    
+    func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>) -> Void) {
+        request(route: .fetchAllCategories, method: .get, completion: completion)
     }
     
     /// Creates a network request session to process a given request.
@@ -27,7 +28,6 @@ struct NetworkService {
     private func request<T: Codable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
-                                     type: T.Type,
                                      completion: @escaping (Result<T, Error>) -> Void) {
         guard let request = createRequest(route: route, method: method, parameters: parameters) else {
             completion(.failure(AppError.unknownError))

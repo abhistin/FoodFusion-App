@@ -21,6 +21,7 @@
 		FE85900F2AF6A23F0033C00E /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE85900D2AF6A23F0033C00E /* DishLandscapeCollectionViewCell.xib */; };
 		FE8590122AF6CCB00033C00E /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8590112AF6CCB00033C00E /* DishDetailViewController.swift */; };
 		FE8590142AF6CFC90033C00E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8590132AF6CFC90033C00E /* UIViewController+Extension.swift */; };
+		FEB895A12AFD43810015AA87 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB895A02AFD43810015AA87 /* AllDishes.swift */; };
 		FEDA1FF92AF7F9EF004249F5 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA1FF72AF7F9EF004249F5 /* DishListTableViewCell.swift */; };
 		FEDA1FFA2AF7F9EF004249F5 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDA1FF82AF7F9EF004249F5 /* DishListTableViewCell.xib */; };
 		FEDA1FFD2AF7FCB1004249F5 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA1FFC2AF7FCB1004249F5 /* ListDishesViewController.swift */; };
@@ -59,6 +60,7 @@
 		FE85900D2AF6A23F0033C00E /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
 		FE8590112AF6CCB00033C00E /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		FE8590132AF6CFC90033C00E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FEB895A02AFD43810015AA87 /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
 		FEDA1FF72AF7F9EF004249F5 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		FEDA1FF82AF7F9EF004249F5 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		FEDA1FFC2AF7FCB1004249F5 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				FE858FFD2AF620D20033C00E /* DishCategory.swift */,
 				FE8590092AF64ADF0033C00E /* Dish.swift */,
 				FEDA20012AF80226004249F5 /* Order.swift */,
+				FEB895A02AFD43810015AA87 /* AllDishes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				FE858FFB2AF618A80033C00E /* CategoryCollectionViewCell.swift in Sources */,
 				FEE246022AF5576B00C1F742 /* OnboardingSlide.swift in Sources */,
 				FEE23E582AF3BDFD00C1F742 /* AppDelegate.swift in Sources */,
+				FEB895A12AFD43810015AA87 /* AllDishes.swift in Sources */,
 				FEE23E5A2AF3BDFD00C1F742 /* SceneDelegate.swift in Sources */,
 				FEDA20092AF94948004249F5 /* Method.swift in Sources */,
 				FEE246002AF555EB00C1F742 /* UIView+Extension.swift in Sources */,

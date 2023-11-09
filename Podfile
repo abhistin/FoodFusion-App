@@ -7,4 +7,5 @@ target 'FoodFusion' do
 
   # Pods for FoodFusion
 pod "Kingfisher"
+pod "ProgressHUD"
 end

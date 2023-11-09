@@ -26,7 +26,7 @@ class OnboardingViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkService.shared.myFirstRequest()
+        
         slides = [OnboardingSlide(title: "Delicious Dishes", description: "Experience a variety of amazing dishes from different cultures of the world.", image: UIImage.slide1),
                   OnboardingSlide(title: "World-Class Chefs", description: "Our dishes are prepared by only the best.", image: UIImage.slide2),
                   OnboardingSlide(title: "Quick Delivery At Your Doorstep", description: "Home delivery and Online reservation for restaurants and cafes.", image: UIImage.slide3)]
