@@ -140,7 +140,7 @@
         <!--HomeViewController-->
         <scene sceneID="4Pg-2O-QcU">
             <objects>
-                <viewController title="HomeViewController" id="woY-dW-eFT" customClass="HomeViewController" customModule="FoodFusion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="woY-dW-eFT" customClass="HomeViewController" customModule="FoodFusion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GWa-8B-0Dh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,7 +298,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Food Fusion" id="iaG-b5-6JB">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="bHi-wQ-h5g"/>
+                        <barButtonItem key="backBarButtonItem" id="bHi-wQ-h5g"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.circle.fill" catalog="system" id="IZQ-Lp-c4K">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
@@ -359,7 +359,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8X-ic-rgo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="g8X-ic-rgo">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="569.33333333333337"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="C7e-Lq-sWq">
@@ -385,14 +385,14 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-50-xCN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-50-xCN">
                                         <rect key="frame" x="0.0" y="40" width="361" height="44.666666666666657"/>
                                         <attributedString key="attributedText">
                                             <fragment content="lksajdbfk lksnd ksaj ck vkldsf vklfbdsg dlkbfdvkl dfsvk sfvlk dkkljsd vks d">
                                                 <attributes>
                                                     <color key="NSColor" systemColor="systemGrayColor"/>
                                                     <font key="NSFont" metaFont="system" size="17"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -404,7 +404,7 @@
                                             <constraint firstAttribute="height" constant="50" id="M4o-rp-gvU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uui-BX-jil">
                                         <rect key="frame" x="0.0" y="166.66666666666663" width="361" height="50"/>

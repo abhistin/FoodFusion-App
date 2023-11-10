@@ -6,20 +6,30 @@
 //
 
 import UIKit
-
+import ProgressHUD
 class ListOrdersViewController: UIViewController {
 
-    var orders: [Order] = [
-        .init(id: "id1", name: "Abhishek", dish: .init(id: "id1", name: "Egg Roll", description: "This is the best I have ever had.", image: "https://picsum.photos/100/200", calories: 24)),
-        .init(id: "id2", name: "Priyag", dish: .init(id: "id1", name: "Pizza", description: "This is the best I have ever had.", image: "https://picsum.photos/100/200", calories: 124)),
-        .init(id: "id3", name: "Param", dish: .init(id: "id1", name: "Pasta", description: "This is the best I have ever had.", image: "https://picsum.photos/100/200", calories: 100))
-    ]
+    var orders: [Order] = []
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Orders"
         registerCells()
+        ProgressHUD.show()
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        NetworkService.shared.fetchOrders { [weak self] (result) in
+            switch result {
+                
+            case .success(let orders):
+                ProgressHUD.dismiss()
+                self?.orders = orders
+                self?.tableView.reloadData()
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     private func registerCells() {
         tableView.register(UINib(nibName: DishListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: DishListTableViewCell.identifier)

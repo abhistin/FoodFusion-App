@@ -6,9 +6,9 @@
 //
 
 import UIKit
-
+import ProgressHUD
 class DishDetailViewController: UIViewController {
-
+    
     @IBOutlet weak var dishImageView: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var caloriesLbl: UILabel!
@@ -19,6 +19,7 @@ class DishDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         populateView()
+        nameField.delegate = self
     }
     
     private func populateView() {
@@ -28,6 +29,33 @@ class DishDetailViewController: UIViewController {
         descriptionLbl.text = dish.description
     }
     @IBAction func placeOrderBtnClicked(_ sender: UIButton) {
-        
+        guard let name = nameField.text?.trimmingCharacters(in: .whitespaces), !name.isEmpty else {
+            ProgressHUD.showError("Please Enter Your Name.")
+            return
+        }
+        ProgressHUD.show("Placing your order...")
+        NetworkService.shared.placeOrder(dishId: dish.id ?? "", name: name) { [weak self] (result) in
+            switch result {
+                
+            case .success(_):
+                ProgressHUD.showSuccess("Your order has been received.🧑‍🍳")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let targetVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                        self?.navigationController?.pushViewController(targetVC, animated: true)
+                    
+                }
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
+    }
+    
+}
+
+extension DishDetailViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameField.resignFirstResponder()
+        return true
     }
 }

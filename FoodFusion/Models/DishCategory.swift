@@ -9,6 +9,6 @@ import Foundation
 
 struct DishCategory:Codable {
     let id: String?
-    let name: String?
+    let title: String?
     let image: String?
 }
