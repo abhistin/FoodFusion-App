@@ -15,6 +15,10 @@ class HomeViewController: UIViewController {
     var categories: [DishCategory] = []
     var populars: [Dish] = []
     var specials: [Dish] = []
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.hidesBackButton = true
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
